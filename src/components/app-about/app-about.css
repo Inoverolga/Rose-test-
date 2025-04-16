@@ -1,0 +1,177 @@
+.app__about {
+    background-color: var(--light-color);
+    padding-top: 80px;
+    .container {
+        padding: 0 var(--container-padding-inline);
+        .about__title {
+            font-weight: 400;
+            font-size: 12px;
+            font-style: italic;
+            color: var(--dark-color);
+        }
+        .text__about {
+            width: 1100px;
+            margin-top: 20px;
+            font-weight: 400;
+            font-size: 40px;
+            color: var(--dark-color);
+            span {
+                color: #a5a5a5;
+            }
+        }
+        .about__services {
+            column-gap: 10px;
+            margin-top: 80px;
+            display: flex;
+            .all_services {
+                width: 50%;
+            }
+        }
+    }
+}
+
+.app__about h3 {
+    font-weight: 400;
+    font-style: italic;
+    font-size: 16px;
+    color: var(--dark-color);
+}
+
+.app__about ul {
+    margin-top: 20px;
+    padding: 0;
+    li {
+        position: relative;
+        margin-top: 10px;
+        font-weight: 400;
+        font-size: 16px;
+        list-style-type: none;
+        color: var(--dark-color);
+
+        &:first-child::before {
+            content: "";
+            display: block;
+            position: absolute;
+            width: 15px;
+            height: 15px;
+            background: url(./iconss/Camera.png) center center / cover no-repeat;
+            left: -30px;
+            top: 2px;
+        }
+        &:nth-child(3):before {
+            content: "";
+            display: block;
+            position: absolute;
+            width: 15px;
+            height: 15px;
+            background: url(./iconss/Edit.png) center center / cover no-repeat;
+            left: -30px;
+            top: 2px;
+        }
+    }
+}
+
+.services__text {
+    width: 50%;
+    font-weight: 400;
+    font-size: 20px;
+    letter-spacing: 0.02em;
+    color: var(--dark-color);
+}
+
+@media screen and (max-width: 1440px) {
+    .app__about .container .text__about {
+        width: 100%;
+    }
+}
+@media screen and (max-width: 768px) {
+    .app__about .container .text__about {
+        font-size: 24px;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .app__about .container .text__about {
+        font-size: 16px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .app__about .container .about__services {
+        margin-top: 40px;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .app__about .container .about__services {
+        margin-top: 20px;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .app__about .container .about__services {
+        row-gap: 20px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .app__about ul li:first-child::before {
+        left: -25px;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .app__about ul li:first-child::before {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .app__about ul li:nth-child(3):before {
+        left: -25px;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .app__about ul li:nth-child(3):before {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .app__about .about__services {
+        flex-wrap: wrap;
+        row-gap: 40px;
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .services__text {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .app__about {
+        padding-top: 50px;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .app__about h3 {
+        font-size: 12px;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .app__about ul li {
+        margin-top: 5px;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .services__text {
+        font-size: 12px;
+    }
+}
